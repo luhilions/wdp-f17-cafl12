@@ -1,1 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Page Title Goes Here</title>
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>Give Us Your Feedback</legend>
+        <form method="post" action="process.php">
+          First Name: <input type="text" size="20" name="firstname" /><br />
+           Last Name: <input type="text" size="20" name="lastname" /><br />
+        </form>
+        
+        <form method="post" action="process.php">
+          Year:<br />
+        <input type="radio" name="year" value="freshman" />Freshman<br />
+          <input type="radio" name="year" value="sophmore" />Sophmore<br />
+          <input type="radio" name="year" value="junior" />Junior<br />
+          <input type="radio" name="year" value="senior" />senior<br />
+        </form>
+        
+        <form method="post" action="process.php">
+          Activities:<br />
+        <input type="checkbox" name="activities" value="sports" />Sports<br />
+           <input type="checkbox" name="activities" value="music" />Music<br />
+           <input type="checkbox" name="activities" value="theater" />Theater<br />
+           <input type="checkbox" name="activities" value="other" />Other<br />
+        </form>
+        
+          <form method="post" action="process.php">
+          Quarter:<br />
+            <select name="Quarter">
+              <option value="Fall">Fall</option>
+              <option value="winter">Winter</option>
+              <option value="Spring">Spring</option>
+              <option value="Summer">Summer</option>
+            </select>
+            
+            <form method="post" action="process.php"> 
+              Comments:<br />
+              <textarea name="more" rows="8" cols="30">
+                Enter your feedback here.
+              </textarea>
+            </form>
+            
+        </form>
+        
+        </feildset>
+    </form>
+    
+  </body>
+
+</html>
